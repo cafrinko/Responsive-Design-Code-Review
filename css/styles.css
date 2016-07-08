@@ -1,12 +1,17 @@
 *:not(body):not(html) {
   box-sizing: border-box;
-  /*margin: 0.5vh 0.5vw 0.5vh 0.5vw;*/
 }
 
 body {
   background: black;
   /*text-transform: capitalize;*/
   font-size: 4vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+}
+
+.description {
+  text-transform: none;
 }
 
 .cf:after {
@@ -22,33 +27,31 @@ body {
   margin: 2.5vh 2.5vw 2.5vh 2.5vw;
 }
 
-.hero {
-  width: 90vw;
-}
-
-.hero img {
-  width: 100%;
-}
-
 @media only screen and (max-width: 600px) {
   .nav {
-    background: white;
+    /*background: white;*/
     width: 90vw;
     height: 14vh;
-    /*margin-left: 2.5vw;
-    margin-top: 5vw;*/
   }
 
   .nav h3 {
-    /*background: white;*/
+    background: white;
+    font-size: 4vw;
     font-family: serif;
-    width: 100%;
+    width: 90vw;
     height: 8vh;
     display: table-cell;
     vertical-align: middle;
     padding: 0 0 0 5vw;
     margin-top: 2.5vh;
-    /*text-transform: capitalize;*/
+  }
+
+  .nav:first-letter {
+    font-size: 5vw;
+  }
+
+  .nav span {
+    font-size: 5vw;
   }
 
   .nav ul {
@@ -56,18 +59,19 @@ body {
     display: inline-block;
     list-style: none;
     float: left;
-    width: 100%;
-    height: 6vh;
+    width: 90vw;
+    height: 5vh;
     margin: 0;
-    padding: 0 0 0 5vw;
+    padding: 1vw 0 0 5vw;
     /*text-transform: capitalize;*/
   }
 
-  .nav li {
+  li {
     /*background: navy;*/
     float: left;
     padding: 1.25vh 2.5vw 0 0;
-    /*text-transform: capitalize;*/
+    font-size: 2.5vw;
+    /*text-transform: uppercase;*/
   }
 
   .location {
@@ -92,6 +96,37 @@ body {
 
   .location h5 {
     letter-spacing: 0.25vw;
+  }
+
+  .hero {
+    width: 90vw;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .hero h4, .press h4 {
+    background: white;
+    margin-top: -1.25vw;
+    padding: 2vh 0 2vh 5vw;
+    font-size: 2.25vw;
+  }
+
+  .press {
+    width: 90vw;
+    height: 12vh;
+    margin: 0;
+  }
+
+  .description {
+    background: white;
+    margin-top: -2.5vw;
+    width: 90vw;
+    height: 29vw;
+    font-size: 3.25vw;
+    padding: 3vh;
+    letter-spacing: 0.15vw;
   }
 
 }
