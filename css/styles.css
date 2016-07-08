@@ -4,6 +4,7 @@
 
 body {
   /*background: black;*/
+  height: 100%;
   font-size: 4vw;
   font-family: 'Slabo 27px', serif;
   text-transform: uppercase;
@@ -291,15 +292,17 @@ ul {
 @media only screen and (min-width: 801px) {
   body {
     background: white;
+    height: 100%;
   }
 
   .hero {
     background: gold;
-    width: 72%;
+    width: 70%;
     height: 98vh;
     position: relative;
     margin: 0;
     z-index: -1;
+    float: left;
     /*top: 2.5vh;
     left: 2.5vw;*/
   }
@@ -325,8 +328,8 @@ ul {
     font-size: 2.5vw;
     position: absolute;
     z-index: 1;
-    top: 50vh;
-    left: 4vw;
+    top: 83vh;
+    left: 5vw;
   }
 
   .location h3 {
@@ -347,7 +350,7 @@ ul {
     font-family: sans-serif;
     font-weight: normal;
     font-size: 2vw;
-    margin: 0;
+    margin: 2vh 0 0 0;
     padding: 0;
   }
 
@@ -360,8 +363,8 @@ ul {
     width: 23.5vw;
     height: 20vw;
     position: absolute;
-    top: 5vh;
-    left: 6vw;
+    top: 6vh;
+    left: 5vw;
     z-index: 1;
   }
 
@@ -386,10 +389,13 @@ ul {
     color: white;
     font-size: 2vw;
     width: 25%;
-    height: 34.5vw;
+    height: 47vh;
     float: right;
     position: relative;
-    margin: -98vh 2vw 0 0;
+    /*top: -98vh;
+    left: -1vw;*/
+    margin: 0 2vw 2vh 0;
+    padding: 0;
   }
 
   .press h4 {
@@ -416,11 +422,13 @@ ul {
     color: white;
     font-size: 1.5vw;
     width: 25%;
-    height: 34.75vw;
+    height: 47vh;
     float: right;
     position: relative;
-    /*left: 50vw;*/
-    margin: -48.25vh 2vw 0 0;
+    /*left: 23.5vw;
+    top: -45vh;*/
+    margin: 2vh 2vw 0 0;
+    padding: 0;
   }
 
   .description img{
